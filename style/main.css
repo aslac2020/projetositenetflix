@@ -1,0 +1,360 @@
+/*variaveis */
+:root{
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+/*zerar margins para todos navegadores*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*tamanho automatico pros elementos*/
+}
+
+/*Elementos base */
+
+body{
+background: var(--preta);
+font-family: 'Arial', Times, serif;
+color: white;
+}
+
+header .container{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black', 'Times New Roman', Times, serif;
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+    margin-left: 10px;
+
+}
+
+/*efeito quando passa o mouse*/
+header nav a:hover{
+    color: #fff;
+}
+
+/* filme principal*/
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65) 100%), url('../img/capa-blacklist.jpg');
+
+    height: 500px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.filme-principal .img-titulo{
+    width: 40%;
+    margin-top: -40px;
+    margin-bottom: 12px;
+}
+
+.filme-principal .informacoes{
+    margin-top: 2px;
+    margin-bottom: 15px;
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #a3a3a3;
+    display: block;
+}
+
+.filme-principal .info-barra{
+    color: #a3a3a3;
+    margin: 0 4px;
+}
+
+.item-quadrado .info-idade{
+    border: 1px solid #a1a1a1;
+    padding: 0 5px;
+}
+
+.filme-principal .botoes{
+  margin-top: -20px;
+  margin-bottom: auto;
+}
+
+.filme-principal .info-setupelenco{
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #fff;
+    max-width: 100%;
+    margin-top: -35px;
+    margin-bottom: 80px;
+}
+.filme-principal .info-configelenco{
+    display: block;
+}
+
+.info-elenco{
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #a3a3a3;
+    margin-right: 5px;
+    margin-top: -100px;
+}
+
+.elenco{
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.filme-principal .info-setupcriacao{
+    display: block;
+}
+
+.info-criacao{
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #a3a3a3;
+    margin-right: 5px;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 25px;
+    margin-right: 10px;
+}
+
+.filme-principal .container{
+    width: 80%;
+}
+
+/* Carossel de Fotos */
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
+
+/* pagina assistir*/
+
+.item-quadradocolorido .info-idade{
+    border: 1px solid red;
+    border-radius: 4px;
+    background-color: red;
+    padding: 0 5px;
+    color: white;
+}
+
+.filme-principal .botoesassitir{
+    margin-top: -20px;
+    margin-bottom: auto;
+  }
+
+  .botaoplay{
+    background-color: rgb(255, 254, 254,);
+    border: none;
+    color: black;
+    border-radius: 5px;
+    font-family: 'Arial Black', 'Times New Roman', Times, serif;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .5s ease all;
+}
+
+.botaoplay:hover{
+    background-color: #a1a1a1;
+    color: black;
+    font-style: bold;
+}
+
+.botaoplay i{
+    margin-right: 15px;
+}
+
+.filme-principal .informacoesserie{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #a3a3a3;
+    display: block;
+}
+.botaolike{
+    padding: 12px;
+    border-radius: 100px;
+    border-color: white;
+    background-color: #a1a1a1;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.botaolike i {
+   padding: 2px;
+}
+
+.botaolike:active{
+    box-shadow: 0 0 0 0 white, inset 3px 3px 3px white;
+    transform: translate(3px, 3px);
+
+}
+
+.botaolike:hover{
+    background-color: white ;
+    color: black;
+    font-style: bold;
+}
+
+.botaodeslike{
+    padding: 12px;
+    border-radius: 100px;
+    border-color: white;
+    background-color: #a1a1a1;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.botaodeslike i {
+   padding: 2px;
+}
+
+.botaodeslike:active{
+    box-shadow: 0 0 0 0 white, inset 3px 3px 3px white;
+    transform: translate(3px, 3px);
+
+}
+
+.botaodeslike:hover{
+    background-color: white ;
+    color: black;
+    font-style: bold;
+}
+
+.filme-principal .img-tituloassistir{
+    width: 40%;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+
+.img-temporada{
+    width: 50%;
+    display: block;
+}
+
+#lista-temporada{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+
+}
+
+#lista-temporada div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+#lista-temporada{
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    max-width: 100%;
+    margin: 0 auto;   
+}
+
+#lista-temporada h2{
+    text-align: center;
+    width: 100%;
+}
+
+#lista-temporada div{
+    flex-grow: 1;
+    flex-basis: 150px;
+    padding: 0 10px;
+}
+
+#lista-temporada h3{
+    color: red;
+}
+
+
+/* pagina informaçoes */
+
+.info-informacoes{
+    color: white;
+}
+
+h4 {
+    margin-bottom: 10px;
+    color: #a3a3a3;
+}
+
+.elencoprincipal{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* pagina series */
+
+.minhalista{
+    margin-top: 30px;
+}
+
+

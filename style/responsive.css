@@ -1,0 +1,80 @@
+@media screen and (max-width: 700px){
+    header .container{
+    flex-direction: column;
+    }
+
+    .botao{
+        margin-top: 8px;
+        width: 250px;
+    }
+
+    .botoes{
+        margin-bottom: auto;
+    }
+    
+    .informacoes{
+        flex-direction: column;
+        width: 82%;
+    }
+
+    .botaolike{
+        margin-top: 8px;
+        width:auto;
+       margin-right: 10px;
+    }
+
+    .botaodeslike{
+        margin-top: 8px;
+        width: auto;
+    }
+
+    .botoesassistir{
+        margin-bottom: auto;
+    }
+
+    .botaoplay{
+        margin-top: 8px;
+        width: 250px;
+    }
+    
+
+@media screen and (max-width: 200px){
+    .informacoes{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .img-titulo{
+        margin-top: 15px;
+        margin-bottom: -50px;
+    }
+
+    .informacoesserie{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    
+    .img-tituloassistir{
+        margin-top: 15px;
+        margin-bottom: -50px;
+    }
+}
+
+
+@media screen and (min-width: 1000px){
+    .descricao{
+        width: 50%;
+    }
+
+    .img-titulo{
+        width: 20%;
+        margin-top: 10px;
+        margin-bottom: auto;
+    }
+    .botoes{
+        margin-bottom: 50px;
+    }
+
+    .botoesassistir{
+        margin-bottom: 50px;
+    }
+}}
