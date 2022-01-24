@@ -18,6 +18,9 @@ Consiste em um site com referência no Netflix.
 - CSS
 - JAVASCRIPT
 
+# Hospedagem
+https://aslac2020-clonenetflix.netlify.app/
+
 # Autor
 
 André de Sousa Lacerda
